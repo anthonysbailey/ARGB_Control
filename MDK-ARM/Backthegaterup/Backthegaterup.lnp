@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"backthegaterup\startup_stm32f072xb.o"
+"backthegaterup\main.o"
+"backthegaterup\stm32f0xx_it.o"
+"backthegaterup\stm32f0xx_hal_msp.o"
+"backthegaterup\stm32f0xx_hal_tim.o"
+"backthegaterup\stm32f0xx_hal_tim_ex.o"
+"backthegaterup\stm32f0xx_hal_rcc.o"
+"backthegaterup\stm32f0xx_hal_rcc_ex.o"
+"backthegaterup\stm32f0xx_hal.o"
+"backthegaterup\stm32f0xx_hal_i2c.o"
+"backthegaterup\stm32f0xx_hal_i2c_ex.o"
+"backthegaterup\stm32f0xx_hal_gpio.o"
+"backthegaterup\stm32f0xx_hal_dma.o"
+"backthegaterup\stm32f0xx_hal_cortex.o"
+"backthegaterup\stm32f0xx_hal_pwr.o"
+"backthegaterup\stm32f0xx_hal_pwr_ex.o"
+"backthegaterup\stm32f0xx_hal_flash.o"
+"backthegaterup\stm32f0xx_hal_flash_ex.o"
+"backthegaterup\stm32f0xx_hal_exti.o"
+"backthegaterup\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "Backthegaterup\Backthegaterup.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Backthegaterup.map" -o Backthegaterup\Backthegaterup.axf
